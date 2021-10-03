@@ -1,0 +1,29 @@
+]17:18:30.578 [Test worker] DEBUG _org.springframework.web.servlet.HandlerMapping.Mappings - 
+	c.e.S.c.MovieController:
+(	{GET [/api/v1/movies]}: getAllMovies()
+0	{GET [/api/v1/movies/{id}]}: getMovieByID(int)
+V	{GET [/api/v1/movies/search/findByCategory/{category}]}: getMoviesByCategory(String)
+-	{POST [/api/v1/movies]}: createMovie(Movie)
+5	{PUT [/api/v1/movies/{id}]}: updateMovie(int,Movie)
+2	{DELETE [/api/v1/movies/{id}]}: deleteMovie(int)
+×17:18:30.591 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 6 mappings in org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping
+Ú17:18:30.860 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+½17:18:30.930 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+17:18:30.974 [Test worker] INFO org.springframework.mock.web.MockServletContext - Initializing Spring TestDispatcherServlet ''
+u17:18:30.975 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+‚17:18:30.980 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected AcceptHeaderLocaleResolver
+z17:18:30.980 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected FixedThemeResolver
+¸17:18:30.984 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@53705300
+¯17:18:30.984 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4d38d74a
+é17:18:30.987 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+17:18:30.987 [Test worker] INFO org.springframework.test.web.servlet.TestDispatcherServlet - Completed initialization in 12 ms
+ƒ17:18:31.028 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - POST "/api/v1/movies", parameters={}
+È17:18:31.035 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.SpringBootLab.controller.MovieController#createMovie(Movie)
+þ17:18:31.074 [Test worker] WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.example.SpringBootLab.controller.Movie com.example.SpringBootLab.controller.MovieController.createMovie(com.example.SpringBootLab.controller.Movie)]
+x17:18:31.077 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 400 BAD_REQUEST
+‚17:18:31.082 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - GET "/api/v1/movies", parameters={}
+Ä17:18:31.084 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped to com.example.SpringBootLab.controller.MovieController#getAllMovies()
+o17:18:31.085 [Test worker] INFO com.example.SpringBootLab.controller.MovieController - Returned list of movies
+×17:18:31.104 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+‰17:18:31.105 [Test worker] DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor - Writing [[]]
+o17:18:31.130 [Test worker] DEBUG org.springframework.test.web.servlet.TestDispatcherServlet - Completed 200 OK
